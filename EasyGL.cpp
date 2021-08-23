@@ -3458,7 +3458,7 @@ int CEasyGL_FFmpaePlatform::Config(
         this->ffmpeg_context.p_fmt_ctx->streams[this->ffmpeg_context.v_idx]->codecpar;
 
     //  获取解码器
-    this->ffmpeg_context.p_codec = avcodec_find_decoder(this->ffmpeg_context.p_codec_par->codec_id);
+    this->ffmpeg_context.p_codec = (AVCodec*)avcodec_find_decoder(this->ffmpeg_context.p_codec_par->codec_id);
     if(this->ffmpeg_context.p_codec == NULL)
     {
         if(this->ffmpeg_context.p_fmt_ctx != 0)

@@ -27,7 +27,7 @@ sudo apt-get install libx264-dev
 sudo apt-get install libfreetype6-dev  
 
 2、下载ffmpeg的4.3b版本的源码  
-git clone https://git.ffmpeg.org/gitweb/ffmpeg.git -b release/4.3
+git clone https://git.ffmpeg.org/ffmpeg.git -b release/4.3
 
 3、编译ffmpeg  
 cd ffmpeg  
